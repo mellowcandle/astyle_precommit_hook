@@ -82,7 +82,7 @@ case `$ASTYLE --version 2> /dev/null` in
 esac
 
 mkdir -p ${BACKUPDIR}
-files=$(`git-diff-index --diff-filter=ACMR --name-only -r --cached $against -- | grep '.c\|.cpp\|.hpp\|.h'`)
+files=$(git-diff-index --diff-filter=ACMR --name-only -r --cached $against -- | grep '.c\|.cpp\|.hpp\|.h')
 for file in $files; do
     x=`echo $file`
     if test "x$x" != "x"; then
