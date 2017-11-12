@@ -13,6 +13,8 @@ Prerequisites:
 Installation:
 * copy the file to .git/hooks in desired repository.
 * Add execution mode (chmod +x)
+* Optional: Installation for every created repository.
+`sudo cp ./pre-commit /usr/share/git-core/templates/hooks/`
 
 Usefull notes:
 * To bypass the hook, just add -n to the git commit command ( git commit -n)
